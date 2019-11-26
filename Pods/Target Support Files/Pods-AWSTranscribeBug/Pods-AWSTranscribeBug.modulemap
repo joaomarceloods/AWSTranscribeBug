@@ -1,0 +1,6 @@
+framework module Pods_AWSTranscribeBug {
+  umbrella header "Pods-AWSTranscribeBug-umbrella.h"
+
+  export *
+  module * { export * }
+}

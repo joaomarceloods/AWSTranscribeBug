@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		CF47CF132389DAAF008B5968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF112389DAAF008B5968 /* Main.storyboard */; };
 		CF47CF152389DAB1008B5968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF142389DAB1008B5968 /* Assets.xcassets */; };
 		CF47CF182389DAB1008B5968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF162389DAB1008B5968 /* LaunchScreen.storyboard */; };
+		CF47CF202389DF11008B5968 /* sample.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF1F2389DF11008B5968 /* sample.wav */; };
+		EE96829ED49C60D0E19B5FE2 /* Pods_AWSTranscribeBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523B251F26CC8D82304D9C9B /* Pods_AWSTranscribeBug.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		523B251F26CC8D82304D9C9B /* Pods_AWSTranscribeBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSTranscribeBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		537C1CA54C3853B410085928 /* Pods-AWSTranscribeBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSTranscribeBug.debug.xcconfig"; path = "Target Support Files/Pods-AWSTranscribeBug/Pods-AWSTranscribeBug.debug.xcconfig"; sourceTree = "<group>"; };
+		71C6C714DCC85D7C2B16210E /* Pods-AWSTranscribeBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSTranscribeBug.release.xcconfig"; path = "Target Support Files/Pods-AWSTranscribeBug/Pods-AWSTranscribeBug.release.xcconfig"; sourceTree = "<group>"; };
 		CF47CF082389DAAF008B5968 /* AWSTranscribeBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSTranscribeBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF47CF0B2389DAAF008B5968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF47CF0D2389DAAF008B5968 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		CF47CF142389DAB1008B5968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF47CF172389DAB1008B5968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF47CF192389DAB1008B5968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF47CF1F2389DF11008B5968 /* sample.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sample.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE96829ED49C60D0E19B5FE2 /* Pods_AWSTranscribeBug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABE4B4DC5181B3CBD0479EDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				537C1CA54C3853B410085928 /* Pods-AWSTranscribeBug.debug.xcconfig */,
+				71C6C714DCC85D7C2B16210E /* Pods-AWSTranscribeBug.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B86D0DBDCD559370B530D93D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				523B251F26CC8D82304D9C9B /* Pods_AWSTranscribeBug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF47CEFF2389DAAE008B5968 = {
 			isa = PBXGroup;
 			children = (
 				CF47CF0A2389DAAF008B5968 /* AWSTranscribeBug */,
 				CF47CF092389DAAF008B5968 /* Products */,
+				ABE4B4DC5181B3CBD0479EDC /* Pods */,
+				B86D0DBDCD559370B530D93D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				CF47CF0B2389DAAF008B5968 /* AppDelegate.swift */,
 				CF47CF0D2389DAAF008B5968 /* SceneDelegate.swift */,
 				CF47CF0F2389DAAF008B5968 /* ViewController.swift */,
+				CF47CF1F2389DF11008B5968 /* sample.wav */,
 				CF47CF112389DAAF008B5968 /* Main.storyboard */,
 				CF47CF142389DAB1008B5968 /* Assets.xcassets */,
 				CF47CF162389DAB1008B5968 /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF47CF1C2389DAB1008B5968 /* Build configuration list for PBXNativeTarget "AWSTranscribeBug" */;
 			buildPhases = (
+				3A668214194C29FDB95030E6 /* [CP] Check Pods Manifest.lock */,
 				CF47CF042389DAAF008B5968 /* Sources */,
 				CF47CF052389DAAF008B5968 /* Frameworks */,
 				CF47CF062389DAAF008B5968 /* Resources */,
+				2242E7174A59B758787637D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF47CF202389DF11008B5968 /* sample.wav in Resources */,
 				CF47CF182389DAB1008B5968 /* LaunchScreen.storyboard in Resources */,
 				CF47CF152389DAB1008B5968 /* Assets.xcassets in Resources */,
 				CF47CF132389DAAF008B5968 /* Main.storyboard in Resources */,
@@ -132,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2242E7174A59B758787637D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWSTranscribeBug/Pods-AWSTranscribeBug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWSTranscribeBug/Pods-AWSTranscribeBug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AWSTranscribeBug/Pods-AWSTranscribeBug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A668214194C29FDB95030E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AWSTranscribeBug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF47CF042389DAAF008B5968 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		CF47CF1D2389DAB1008B5968 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 537C1CA54C3853B410085928 /* Pods-AWSTranscribeBug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +372,7 @@
 		};
 		CF47CF1E2389DAB1008B5968 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C6C714DCC85D7C2B16210E /* Pods-AWSTranscribeBug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
