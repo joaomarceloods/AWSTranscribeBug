@@ -41,7 +41,7 @@ class ViewController: UIViewController {
                 }
                 let mediaFileURI = "s3://\(result.bucket)/\(result.key)"
                 return self.startTranscriptionJob(mediaFileURI)
-            }.continueWith { task -> Any? in
+            }.continueWith(executor: AWSExecutor(dispatchQueue: DispatchQueue.global())) { task -> Any? in
                 guard
                     task.error == nil,
                     let transcriptionJobName = task.result?.transcriptionJob?.transcriptionJobName
