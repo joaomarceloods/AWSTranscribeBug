@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF076FC523A52EB700F26590 /* sample.mov in Resources */ = {isa = PBXBuildFile; fileRef = CF076FC423A52EB700F26590 /* sample.mov */; };
 		CF47CF0C2389DAAF008B5968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0B2389DAAF008B5968 /* AppDelegate.swift */; };
 		CF47CF0E2389DAAF008B5968 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0D2389DAAF008B5968 /* SceneDelegate.swift */; };
 		CF47CF102389DAAF008B5968 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0F2389DAAF008B5968 /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		CF47CF152389DAB1008B5968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF142389DAB1008B5968 /* Assets.xcassets */; };
 		CF47CF182389DAB1008B5968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF162389DAB1008B5968 /* LaunchScreen.storyboard */; };
 		CF47CF202389DF11008B5968 /* sample.wav in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF1F2389DF11008B5968 /* sample.wav */; };
+		CFAA99F623A5142B0032D9D8 /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA99F523A5142B0032D9D8 /* Transcript.swift */; };
 		EE96829ED49C60D0E19B5FE2 /* Pods_AWSTranscribeBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523B251F26CC8D82304D9C9B /* Pods_AWSTranscribeBug.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,6 +23,7 @@
 		523B251F26CC8D82304D9C9B /* Pods_AWSTranscribeBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSTranscribeBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		537C1CA54C3853B410085928 /* Pods-AWSTranscribeBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSTranscribeBug.debug.xcconfig"; path = "Target Support Files/Pods-AWSTranscribeBug/Pods-AWSTranscribeBug.debug.xcconfig"; sourceTree = "<group>"; };
 		71C6C714DCC85D7C2B16210E /* Pods-AWSTranscribeBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSTranscribeBug.release.xcconfig"; path = "Target Support Files/Pods-AWSTranscribeBug/Pods-AWSTranscribeBug.release.xcconfig"; sourceTree = "<group>"; };
+		CF076FC423A52EB700F26590 /* sample.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample.mov; sourceTree = "<group>"; };
 		CF47CF082389DAAF008B5968 /* AWSTranscribeBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSTranscribeBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF47CF0B2389DAAF008B5968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF47CF0D2389DAAF008B5968 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		CF47CF172389DAB1008B5968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF47CF192389DAB1008B5968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF47CF1F2389DF11008B5968 /* sample.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sample.wav; sourceTree = "<group>"; };
+		CFAA99F523A5142B0032D9D8 /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +90,12 @@
 				CF47CF0D2389DAAF008B5968 /* SceneDelegate.swift */,
 				CF47CF0F2389DAAF008B5968 /* ViewController.swift */,
 				CF47CF1F2389DF11008B5968 /* sample.wav */,
+				CF076FC423A52EB700F26590 /* sample.mov */,
 				CF47CF112389DAAF008B5968 /* Main.storyboard */,
 				CF47CF142389DAB1008B5968 /* Assets.xcassets */,
 				CF47CF162389DAB1008B5968 /* LaunchScreen.storyboard */,
 				CF47CF192389DAB1008B5968 /* Info.plist */,
+				CFAA99F523A5142B0032D9D8 /* Transcript.swift */,
 			);
 			path = AWSTranscribeBug;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 			files = (
 				CF47CF202389DF11008B5968 /* sample.wav in Resources */,
 				CF47CF182389DAB1008B5968 /* LaunchScreen.storyboard in Resources */,
+				CF076FC523A52EB700F26590 /* sample.mov in Resources */,
 				CF47CF152389DAB1008B5968 /* Assets.xcassets in Resources */,
 				CF47CF132389DAAF008B5968 /* Main.storyboard in Resources */,
 			);
@@ -211,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF47CF102389DAAF008B5968 /* ViewController.swift in Sources */,
+				CFAA99F623A5142B0032D9D8 /* Transcript.swift in Sources */,
 				CF47CF0C2389DAAF008B5968 /* AppDelegate.swift in Sources */,
 				CF47CF0E2389DAAF008B5968 /* SceneDelegate.swift in Sources */,
 			);
